@@ -10,7 +10,7 @@ Table: T7-Age
 ## Process ##
 1. Navigate to <https://www.socialexplorer.com/>, click on "Start Now"
 2. Once redirected to the map screen, click the hamburger menu on the top right, click "Create Report"
-3. Survery: ACS 2015 (5-Year Estimate); Topic: Age; Geographies: upload <data/ACS-hartford-tracts.csv> 
+3. Survery: ACS 2015 (5-Year Estimate); Topic: Age; Geographies: upload <raw/ACS-hartford-tracts.csv> 
 4. A new tab will load with a bunch of tables. Click on "Data Download"
 5. Check output options: "Output column labels in first row"
 6. Download CSV
