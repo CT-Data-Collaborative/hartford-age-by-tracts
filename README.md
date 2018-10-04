@@ -2,9 +2,9 @@
 Extracts ACS 2015 (5 year estimate) data for Hartford, in terms of median age, young population, elderly population, prime working population
 
 ## Specification ##
-Source: <https://www.socialexplorer.com/>
-Survey: ACS 2015 (5-Year Estimates)
-Dataset: Social Explorer Tables: ACS 2015 (5-Year Estimates)
+Source: <https://www.socialexplorer.com/>\
+Survey: ACS 2015 (5-Year Estimates)\
+Dataset: Social Explorer Tables: ACS 2015 (5-Year Estimates)\
 Table: T7-Age
 
 ## Process ##
