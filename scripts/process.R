@@ -27,7 +27,7 @@ fips <- ExtractNumData(data$FIPS)
 population.total <- ExtractNumData(data$Total.Population)
 denomenator.df <- data.frame(fips, population.total)
 colnames(denomenator.df) <- c("FIPS Code", "Total Population 2011-2015")
-WriteDFToTable(denomenator.df, "population-denomenator.csv")
+WriteDFToTable(denomenator.df, "population-denominator.csv")
 
 # create dataframe for young population (<18 years of age) and write to file
 population.young <- ExtractNumData(data$Total.Population..Under.5.Years) +
@@ -56,7 +56,7 @@ WriteDFToTable(population.working.df, "population-prime-working.csv")
 
 # create dataframe for median age and write to file
 population.median.age <- ExtractNumData(data$Median.Age.)
-population.median.df <- data.frame(fips, population.prime.working)
+population.median.df <- data.frame(fips, population.median.age)
 colnames(population.median.df) <- c("FIPS Code", "Population median age 2011-2015")
 WriteDFToTable(population.median.df, "population-median.csv")
 
