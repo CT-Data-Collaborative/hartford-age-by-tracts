@@ -1,0 +1,105 @@
+{
+  "name": "hartford-age-by-tracts",
+  "datapackage_version": "1.0-beta.18",
+  "title": "Hartford Age Data, by tracts",
+  "description": "Data on the young, prime-working, elderly population in Hartford, and stats on the median age in each tract.",
+  "version": "1.0",
+  "licenses": [{
+    "url": "http://opendatacommons.org/licenses/pddl/",
+    "name": "Open Data Commons Public Domain",
+    "version": "1.0",
+    "id": "odc-pddl"
+  }],
+  "sources": [{
+    "name": "samhsa",
+    "web": ""
+  }],
+  "author":[{
+    "name": "Zorawar Moolenaar",
+    "email": "zsingh@trincoll.edu",
+    "web": "http://ctdata.org"
+  }],
+  "contributor": [],
+  "resources": [{
+    "path": "data/population-total.csv",
+    "format": "csv",
+    "schema": {
+      "fields": [{
+          "name": "Id",
+          "type": "string",
+          "dimension": false,
+          "description" : "the FIPS code"
+        }, {
+          "name": "y_2011-2015",
+          "type": "number",
+          "dimension": false,
+          "description" : "the total population in each tract in the 2011-2015 ACS estimate"
+        }]
+      }
+    },{
+    "path": "data/population-young.csv",
+    "format": "csv",
+    "schema": {
+      "fields": [{
+          "name": "Id",
+          "type": "string",
+          "dimension": false,
+          "description" : "the FIPS code"
+        }, {
+          "name": "y_2011-2015",
+          "type": "number",
+          "dimension": false,
+          "description" : "the young population in each tract in the 2011-2015 ACS estimate"
+        }]
+      }
+    },{
+    "path": "data/population-prime-working.csv",
+    "format": "csv",
+    "schema": {
+      "fields": [{
+          "name": "Id",
+          "type": "string",
+          "dimension": false,
+          "description" : "the FIPS code"
+        }, {
+          "name": "y_2011-2015",
+          "type": "number",
+          "dimension": false,
+          "description" : "the prime-working population in each tract in the 2011-2015 ACS estimate"
+        }]
+      }
+    },{
+    "path": "data/population-elderly.csv",
+    "format": "csv",
+    "schema": {
+      "fields": [{
+          "name": "Id",
+          "type": "string",
+          "dimension": false,
+          "description" : "the FIPS code"
+        }, {
+          "name": "y_2011-2015",
+          "type": "number",
+          "dimension": false,
+          "description" : "the elderly population in each tract in the 2011-2015 ACS estimate"
+        }]
+      }
+    },{
+    "path": "data/median-age.csv",
+    "format": "csv",
+    "schema": {
+      "fields": [{
+          "name": "Id",
+          "type": "string",
+          "dimension": false,
+          "description" : "the FIPS code"
+        }, {
+          "name": "y_2011-2015",
+          "type": "number",
+          "dimension": false,
+          "description" : "the median age in each tract in the 2011-2015 ACS estimate"
+        }]
+      }
+  ],
+  "last_modified": "10/04/2018"
+}
