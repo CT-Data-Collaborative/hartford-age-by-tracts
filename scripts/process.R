@@ -11,7 +11,7 @@ ExtractNumData <- function (factor) {
 WriteDFToTable <- function(df, filename){
   write.table(
     df,
-    file = file.path(getwd(), "data", "population-denominator.csv"),
+    file = file.path(getwd(), "data", filename),
     sep = ",",
     row.names = FALSE
   )
@@ -56,7 +56,7 @@ WriteDFToTable(population.working.df, "population-prime-working.csv")
 
 # create dataframe for median age and write to file
 population.median.age <- ExtractNumData(data$Median.Age.)
-population.working.df <- data.frame(fips, population.prime.working)
+population.median.df <- data.frame(fips, population.prime.working)
 colnames(population.median.df) <- c("FIPS Code", "Population median age 2011-2015")
 WriteDFToTable(population.median.df, "population-median.csv")
 
